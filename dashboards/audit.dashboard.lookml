@@ -7,7 +7,7 @@
   elements:
   - title: Audit
     name: Audit
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     size_to_fit: true
     type: table
@@ -63,7 +63,7 @@
       display: inline
       options:
       - Audit
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: []
     field: events.log_type
@@ -77,7 +77,7 @@
       type: advanced
       display: popover
       options: []
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: []
     field: events.event_time_time
@@ -90,7 +90,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: [Log Type, Timerange]
     field: events.combined_name
@@ -103,7 +103,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: [Log Type, Timerange]
     field: events__security_result__detection_fields__result.result

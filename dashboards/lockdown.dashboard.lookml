@@ -8,7 +8,7 @@
   elements:
   - title: Hosts currently locked (30 days history)
     name: Hosts currently locked (30 days history)
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     type: looker_grid
     fields: [events.last_event_time, events.last_success, events.last_observer_display_name,
@@ -77,7 +77,7 @@
     height: 4
   - title: History of Hosts locked during the selected time range
     name: History of Hosts locked during the selected time range
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     type: looker_grid
     fields: [events.last_event_time, events.last_action_details, events.last_observer_display_name,
@@ -135,7 +135,7 @@
     height: 4
   - title: Accounts currently locked (30 days history)
     name: Accounts currently locked (30 days history)
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     type: looker_grid
     fields: [events.last_event_time, events.last_action_details, events.last_observer_display_name,
@@ -207,7 +207,7 @@
     height: 4
   - title: History of Accounts locked during the selected time range
     name: History of Accounts locked during the selected time range
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     type: looker_grid
     fields: [events.last_event_time, events.last_action_details, events.last_observer_display_name,
@@ -278,7 +278,7 @@
       display: inline
       options:
       - Lockdown
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: []
     field: events.log_type
@@ -292,7 +292,7 @@
       type: advanced
       display: popover
       options: []
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: []
     field: events.event_time_time

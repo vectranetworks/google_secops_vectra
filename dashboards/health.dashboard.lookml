@@ -8,7 +8,7 @@
   elements:
   - title: Health Dashboards
     name: Health Dashboards
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     type: table
     fields: [events.metadata__description, events__security_result.action_details,
@@ -65,7 +65,7 @@
       display: inline
       options:
       - Health
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: []
     field: events.log_type
@@ -79,7 +79,7 @@
       type: advanced
       display: popover
       options: []
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: []
     field: events.event_time_time
@@ -92,7 +92,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: [Log Type]
     field: events__security_result.action_details

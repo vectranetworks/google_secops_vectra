@@ -8,7 +8,7 @@
   elements:
   - title: Entity Table
     name: Entity Table
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     type: table
     fields: [events.target_entity_standarized, events.last_target_data_source, events.last_target__ip,
@@ -66,7 +66,7 @@
     height: 4
   - title: Threat Vs Certainty over Time
     name: Threat Vs Certainty over Time
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     type: looker_scatter
     fields: [events.target_entity_standarized, events.last_confidence_score, events.last_risk_score,
@@ -186,7 +186,7 @@
       display: inline
       options:
       - Scoring
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: []
     field: events.log_type
@@ -200,7 +200,7 @@
       type: advanced
       display: popover
       options: []
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: []
     field: events.event_time_time
@@ -213,7 +213,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: [Timerange, Log Type]
     field: events.severity
@@ -226,7 +226,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: [Timerange, Log Type]
     field: events.target_data_source
@@ -239,7 +239,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: [Timerange, Log Type]
     field: events.scoring_type
@@ -252,7 +252,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: [Timerange, Log Type]
     field: events.assigned_to2

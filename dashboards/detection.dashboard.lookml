@@ -7,7 +7,7 @@
   elements:
   - title: Detection Categories over Time
     name: Detection Categories over Time
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     type: looker_area
     fields: [events.category, events.event_time_date, count_of_metadata_product_log_id]
@@ -129,7 +129,7 @@
     height: 11
   - title: Detection Table
     name: Detection Table
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     type: looker_grid
     fields: [events.last_category, events.last_source_entity, events.last_risk_score,
@@ -245,7 +245,7 @@
       display: inline
       options:
       - Detection
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: []
     field: events.log_type
@@ -259,7 +259,7 @@
       type: advanced
       display: popover
       options: []
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: []
     field: events.event_time_time
@@ -272,7 +272,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: [Log Type, Timerange]
     field: events.category
@@ -285,7 +285,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: [Log Type, Timerange]
     field: events.metadata__product_event_type
@@ -298,7 +298,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: [Log Type, Timerange]
     field: events.data_source
@@ -311,7 +311,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: [Log Type, Timerange]
     field: events.type

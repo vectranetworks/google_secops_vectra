@@ -7,7 +7,7 @@
   elements:
   - title: Top signatures
     name: Top signatures
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     type: looker_pie
     fields: [events__security_result.threat_name, count]
@@ -102,7 +102,7 @@
     height: 10
   - title: Top Sources
     name: Top Sources
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     type: looker_pie
     fields: [events__principal__ip.events__principal__ip, count_2]
@@ -170,7 +170,7 @@
     height: 10
   - title: Top Destinations
     name: Top Destinations
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     type: looker_pie
     fields: [events__target__ip.events__target__ip, count_2]
@@ -240,7 +240,7 @@
     height: 10
   - title: Top Protocols
     name: Top Protocols
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     type: looker_pie
     fields: [events.application_protocol, count_1]
@@ -330,7 +330,7 @@
     height: 10
   - title: Match's Alerts
     name: Match's Alerts
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     type: table
     fields: [events__principal__ip.events__principal__ip, events__target__ip.events__target__ip,
@@ -401,7 +401,7 @@
       display: inline
       options:
       - Match
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: []
     field: events.log_type
@@ -415,7 +415,7 @@
       type: advanced
       display: popover
       options: []
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: []
     field: events.event_time_time
@@ -428,7 +428,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: []
     field: events.direction
@@ -441,7 +441,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: [Log Type, Timerange]
     field: events.application_protocol
@@ -454,7 +454,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: [Event Time Time, Log Type, Timerange]
     field: events__principal__ip.events__principal__ip
@@ -467,7 +467,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: vectra_qux_dashboards
+    model: vectra_detect_dashboards
     explore: events
     listens_to_filters: [Event Time Time, Log Type, Timerange]
     field: events__target__ip.events__target__ip
