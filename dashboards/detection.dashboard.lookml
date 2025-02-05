@@ -7,7 +7,7 @@
   elements:
   - title: Detection List
     name: Detection List
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     type: looker_grid
     fields: [events.metadata__product_log_id, events.last_principal_entity_uid_standardized,
@@ -136,7 +136,7 @@
     height: 7
   - title: Detection Categories over Time
     name: Detection Categories over Time
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     type: looker_area
     fields: [events.category, count_of_metadata_product_log_id, events.event_time_date]
@@ -258,7 +258,7 @@
       display: inline
       options:
       - Detection
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     listens_to_filters: []
     field: events.log_type
@@ -272,7 +272,7 @@
       type: advanced
       display: popover
       options: []
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     listens_to_filters: []
     field: events.event_time_time
@@ -285,7 +285,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     listens_to_filters: [Log Type, Timerange]
     field: events.metadata__product_event_type
@@ -298,7 +298,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     listens_to_filters: [Log Type, Timerange]
     field: events.category
@@ -311,7 +311,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     listens_to_filters: []
     field: events.principal_data_source

@@ -7,7 +7,7 @@
   elements:
   - title: Lockdown
     name: Lockdown
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     type: looker_grid
     fields: [events.event_time_time, events.target_entity_name_standardized, events.is_locked,
@@ -97,7 +97,7 @@
       display: inline
       options:
       - Lockdown
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     listens_to_filters: []
     field: events.log_type
@@ -111,7 +111,7 @@
       type: advanced
       display: popover
       options: []
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     listens_to_filters: []
     field: events.event_time_time
@@ -124,7 +124,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     listens_to_filters: [Timerange, Log Type]
     field: events.metadata__product_event_type
@@ -137,7 +137,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     listens_to_filters: [Timerange, Log Type]
     field: events.is_locked

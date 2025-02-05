@@ -7,7 +7,7 @@
   elements:
   - title: Entities List
     name: Entities List
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     type: looker_grid
     fields: [events.target_entity_id, events.last_urgency_score, events.last_target_entity_uid_standardized,
@@ -214,7 +214,7 @@
     height: 6
   - title: Not Prioritized
     name: Not Prioritized
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     type: single_value
     fields: [count_of_target_entity_id]
@@ -264,7 +264,7 @@
     height: 6
   - title: Prioritized
     name: Prioritized
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     type: single_value
     fields: [count_of_target_entity_id]
@@ -324,7 +324,7 @@
       display: inline
       options:
       - Scoring
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     listens_to_filters: []
     field: events.log_type
@@ -338,7 +338,7 @@
       type: advanced
       display: popover
       options: []
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     listens_to_filters: []
     field: events.event_time_time
@@ -351,7 +351,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     listens_to_filters: [Log Type]
     field: events__security_result__detection_fields__type.type
@@ -364,7 +364,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     listens_to_filters: [Log Type]
     field: events.target_data_source
@@ -377,7 +377,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     listens_to_filters: []
     field: prioritized_not_prioritized.last_priority_details

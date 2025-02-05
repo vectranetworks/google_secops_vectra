@@ -7,7 +7,7 @@
   elements:
   - title: System Table
     name: System Table
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     type: looker_grid
     fields: [events__security_result__detection_fields__system_version_last_update.system_version_last_update,
@@ -93,7 +93,7 @@
     height: 3
   - title: Sensor Table
     name: Sensor Table
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     type: looker_grid
     fields: [events.event_time_time, events.observer__hostname, events__observer__ip.events__observer__ip,

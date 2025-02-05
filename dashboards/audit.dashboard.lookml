@@ -7,7 +7,7 @@
   elements:
   - title: Audit Table
     name: Audit Table
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     type: looker_grid
     fields: [events.metadata__product_log_id, events.last_event_time, events.last_audit_username_standardized,
@@ -99,7 +99,7 @@
       display: inline
       options:
       - Audit
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     listens_to_filters: []
     field: events.log_type
@@ -113,7 +113,7 @@
       type: advanced
       display: popover
       options: []
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     listens_to_filters: []
     field: events.event_time_time
@@ -126,7 +126,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     listens_to_filters: [Timerange, Log Type]
     field: events.audit_username_standardized
@@ -139,7 +139,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: vectra_rux_dashboard
+    model: vectra_xdr_dashboard
     explore: events
     listens_to_filters: [Log Type]
     field: events__security_result.action_details

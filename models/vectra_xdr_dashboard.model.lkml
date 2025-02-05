@@ -4,12 +4,12 @@ connection: "chronicle"
 include: "/views/**/*.view.lkml"
 include: "/dashboards/**/*.dashboard"
 
-datagroup: vectra_rux_dashboard_default_datagroup {
+datagroup: vectra_xdr_dashboard_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
   max_cache_age: "1 hour"
 }
 
-persist_with: vectra_rux_dashboard_default_datagroup
+persist_with: vectra_xdr_dashboard_default_datagroup
 
 explore: entity_enum_value_to_name_mapping {}
 
