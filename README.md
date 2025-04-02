@@ -111,14 +111,14 @@ gcloud functions deploy CLOUD_FUNCTION_NAME \
 ##### Example Command :
 ```sh
 gcloud functions deploy funcusingcmd \
---set-env-vars CHRONICLE_CUSTOMER_ID=abcd1234-1234-1234-abcd-1234abcd12, \
-CHRONICLE_SERVICE_ACCOUNT=projects/1234567890/secrets/chronicle_service_account/versions/1, \
-CHRONICLE_REGION=us, \
-GCP_BUCKET_NAME=test-bucket, \
-GCP_PROJECT_NUMBER=1234567890, \
-CLIENT_ID=projects/1234567890/secrets/client_id_test, \
-SECRET_KEY=projects/1234567890/secrets/client_secret_test, \
-VECTRA_PORTAL_URL=https://1234567890.cc1.portal.vectra.ai, \
+--set-env-vars CHRONICLE_CUSTOMER_ID=abcd1234-1234-1234-abcd-1234abcd12,\
+CHRONICLE_SERVICE_ACCOUNT=projects/1234567890/secrets/chronicle_service_account/versions/1,\
+CHRONICLE_REGION=us,\
+GCP_BUCKET_NAME=test-bucket,\
+GCP_PROJECT_NUMBER=1234567890,\
+CLIENT_ID=projects/1234567890/secrets/client_id_test,\
+SECRET_KEY=projects/1234567890/secrets/client_secret_test,\
+VECTRA_PORTAL_URL=https://1234567890.cc1.portal.vectra.ai\
 --gen2 \
 --runtime=python312 \
 --region=us-central1 \
