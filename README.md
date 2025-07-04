@@ -14,21 +14,6 @@
 
 Refer to the [Vectra Syslog Guide](https://support.vectra.ai/s/article/KB-VS-1233) for step-by-step configuration details.
 
-## Parser Deployment
-
-> **Important:** : This parser deployment process is not required, once we successfully submit the parser repo.
-
-1. In the navigation bar, select Setting > SIEM Settings > Parsers.
-2. Search the Parsers table for the log type you want to extend.
-3. Click Create Parser.
-4. Select Vectra Detect log source from the Log Source list.
-5. Select Start with Raw Logs Only to create a new parser.
-6. Copy the parser content from github repo and paste it in the code section.
-7. Click Validate to validate the custom parser, the validation process may take a few minutes.
-8. Click Submit.
-9. After successful validation, click on Next
-The parser is picked for normalization after 20 minutes.
-
 ## View Events in Google SecOps
 
 1. Log in to Google SecOps:
